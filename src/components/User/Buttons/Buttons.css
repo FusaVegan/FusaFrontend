@@ -1,0 +1,50 @@
+.box-buttons-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 10px;
+    gap: 10px;
+}
+
+.box-buttons-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 1px 10px;
+    border: solid 2px #CFA9A3;
+    border-radius: 5px;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 260px;
+}
+
+.button-counter {
+    font-size: 28px;
+    border: none;
+    color: #D7903A;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.button-counter:hover {
+    color: #C9451E;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.counter {
+    font-size: 1.6rem;
+    font-weight: 530;
+}

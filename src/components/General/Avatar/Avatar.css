@@ -1,0 +1,30 @@
+.img-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.box-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.avatar-name {
+    color: #fafafa;
+}
+
+.button-close-session {
+    border: solid 2px #CFA9A3;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: #6B2140;
+    color: #fafafa;
+    transition: 0.7s;
+}
+
+.button-close-session:hover {
+    background-color: #6b2140bb;
+}

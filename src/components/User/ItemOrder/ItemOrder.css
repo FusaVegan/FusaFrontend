@@ -1,0 +1,43 @@
+@media screen and (min-width: 300px) {
+    .item-order-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: -webkit-fill-available;
+        gap: 10px;
+        border-bottom: 1px solid #D7903A;
+        padding: 5px 0px;
+    }
+}
+
+@media screen and (min-width: 590px) {
+    .item-order-card {
+        flex-direction: row;
+        padding: 5px 20px;
+        gap: 0px;
+        justify-content: space-between;
+    }
+}
+
+.img-item-order {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.box-price-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-order-card:first-child {
+    border-top: 1px solid #D7903A;
+}
+
+.item-order-card:last-child {
+    border-bottom: 1px solid #D7903A;
+}

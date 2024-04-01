@@ -1,0 +1,12 @@
+.section-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .section-profile {
+        padding: 20px 40px;
+    }
+}
