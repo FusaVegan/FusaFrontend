@@ -1,9 +1,9 @@
 import React from 'react';
 import './ItemOrder.css';
 
-const ItemOrder = ({ product, count }) => {
+const ItemOrder = ({ product, count, unitPrice }) => {
 
-    const finalPrice = product.price * count;
+    const finalPrice = unitPrice * count;
 
     return (
         <div className='item-order-card'>

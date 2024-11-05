@@ -15,9 +15,15 @@ import FormUpdateUser from './components/General/FormUpdateUser/FormUpdateUser';
 import DetailOrderContainer from "./components/User/DetailOrderContainer/DetailOrderContainer";
 import AboutUs from "./components/General/AboutUs/AboutUs";
 import ManageUsersContainer from "./components/Admin/ManageUsersContainer/ManageUsersContainer";
+import ManageShopsContainer from "./components/Admin/ManageShopsContainer/ManageShopsContainer";
 import OrderListContainerAdmin from "./components/Admin/OrderListContainerAdmin/OrderListContainerAdmin";
+import ClientOrderListContainer from "./components/Admin/ClientOrderListContainer/ClientOrderListContainer";
 import OrderDetailContainer from "./components/Admin/OrderDetailContainer/OrderDetailContainer";
+import ClientOrderDetailContainer from "./components/Admin/ClientOrderDetailContainer/ClientOrderDetailContainer";
+import ClientDetailContainer from "./components/Admin/ClientDetailContainer/ClientDetailContainer";
 import CreateProductAdmin from "./components/Admin/CreateProductAdmin/CreateProductAdmin";
+import GeneralStadistics from "./components/Admin/GeneralStadistics/GeneralStadistics";
+import CreateClientAdmin from "./components/Admin/CreateClientAdmin/CreateClientAdmin";
 
 const App = () => {
     return (
@@ -42,8 +48,15 @@ const App = () => {
                 <Route path="/Detalle-admin/:id" element={<DetailContainerAdmin />} />
                 <Route path="/Administrar-usuarios" element={<ManageUsersContainer />} />
                 <Route path="/Ordenes-admin" element={<OrderListContainerAdmin />} />
+                <Route path="/Ordenes-cliente/:id" element={<ClientOrderListContainer />} />
                 <Route path="/Detalle-pedido-admin/:id" element={<OrderDetailContainer />} />
+                <Route path="/Detalle-pedido-cliente/:id" element={<ClientOrderDetailContainer />} />
+                <Route path="/Detalle-cliente/:id" element={<ClientDetailContainer />} />
                 <Route path="/Crear-producto" element={<CreateProductAdmin />} />
+                <Route path="/Administrar-clientes" element={<ManageShopsContainer />} />
+                <Route path="/Analisis" element={<GeneralStadistics />} />
+                <Route path="/Crear-cliente" element={<CreateClientAdmin />} />
+
             </Routes>
             <Footer />
         </BrowserRouter>

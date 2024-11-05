@@ -16,7 +16,7 @@ const ItemList = ({ products }) => {
   const firstIndex = (currentPage - 1) * quantityPerPage;
   const lastIndex = Math.min(firstIndex + quantityPerPage, products.length);
 
-  const quantityOptions = [6, 12, products.length];
+  const quantityOptions = products.length > 12 ? [6, 12, products.length] : [6, 12];
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);

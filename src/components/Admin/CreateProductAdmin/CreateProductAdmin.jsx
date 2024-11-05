@@ -39,7 +39,7 @@ const CreateProductAdmin = () => {
 
         if (!input.description) errors.description = '*Este campo es obligatorio.';
         else if (!/^[\w\d\sáéíóúÁÉÍÓÚüÜñÑ.,:;¡!¿?(){}[\]\-\/&%$@#"'+=*<>|_]{10,300}$/.test(input.description)) {
-            errors.description = `Necesita una descripcion de 10 a 300 caracteres. Actual(${input.name.length})`;
+            errors.description = `Necesita una descripcion de 10 a 300 caracteres. Actual(${input.description.length})`;
         } else errors.description = '';
 
         if (!input.type) errors.type = '*Este campo es obligatorio.';

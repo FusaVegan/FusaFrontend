@@ -20,11 +20,13 @@ const initialState = {
     user: user,
     cart: [],
     orders: [],
+    clientOrders: [],
     favorites: [],
     products: [],
     productsToRender: [],
     types: [],
     clients: [],
+    shops: [],
     reviews: [],
     detail: null,
     error: null,
@@ -78,6 +80,18 @@ export const rootReducer = (state = initialState, action) => {
                 ...state,
                 clients: action.payload
             };
+        // actions para los shops (locales / clientes)
+        case actions.GET_SHOPS:
+            return {
+                ...state,
+                shops: action.payload
+            };
+
+        case actions.CLEAN_SHOPS:
+            return {
+                ...state,
+                shops: action.payload
+            };
 
         // actions para los detail
 
@@ -120,7 +134,14 @@ export const rootReducer = (state = initialState, action) => {
                 ...state,
                 orders: action.payload
             };
+        // actions para las ordenes de clientes / locales
 
+        case actions.GET_CLIENT_ORDERS:
+            return {
+                ...state,
+                clientOrders: action.payload
+            };
+            
         // actions para los favoritos
 
         case actions.GET_FAVORITES:

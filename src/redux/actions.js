@@ -3,12 +3,16 @@ export const actions = {
     SIGN_OUT: 'SIGN_OUT',
     GET_CLIENTS: 'GET_CLIENTS',
     CLEAN_CLIENTS: 'CLEAN_CLIENTS',
+    GET_SHOPS: 'GET_SHOPS',
+    CLEAN_SHOPS: 'CLEAN_SHOPS',
     GET_DETAIL: 'GET_DETAIL',
     CLEAN_DETAIL: 'CLEAN_DETAIL',
     GET_FAVORITES: 'GET_FAVORITES',
     CLEAN_FAVORITES: 'CLEAN_FAVORITES',
     GET_ORDERS: 'GET_ORDERS',
     CLEAN_ORDERS: 'CLEAN_ORDERS',
+    GET_CLIENT_ORDERS: 'GET_CLIENT_ORDERS',
+    CLEAN_CLIENT_ORDERS: 'CLEAN_CLIENT_ORDERS',
     ADD_TO_CART: 'ADD_TO_CART',
     UPDATE_QUANTITY: 'UPDATE_QUANTITY',
     CLEAN_CART: 'CLEAN_CART',
@@ -47,6 +51,24 @@ export const sign_out = () => {
 };
 
 // actions para los admin
+
+export const get_shops = (shops) => {
+    return (dispatch) => {
+        return dispatch({
+            type: actions.GET_SHOPS,
+            payload: shops
+        });
+    };
+};
+
+export const clean_shops = () => {
+    return (dispatch) => {
+        return dispatch({
+            type: actions.GET_SHOPS,
+            payload: []
+        });
+    };
+};
 
 export const get_clients = (clients) => {
     return (dispatch) => {
@@ -101,6 +123,25 @@ export const clean_orders = () => {
     return (dispatch) => {
         return dispatch({
             type: actions.GET_ORDERS,
+            payload: []
+        });
+    };
+};
+// actions para las ordenes de clientes / locales
+
+export const get_client_orders = (orders) => {
+    return (dispatch) => {
+        return dispatch({
+            type: actions.GET_CLIENT_ORDERS,
+            payload: orders
+        });
+    };
+};
+
+export const clean_client_orders = () => {
+    return (dispatch) => {
+        return dispatch({
+            type: actions.GET_CLIENT_ORDERS,
             payload: []
         });
     };
