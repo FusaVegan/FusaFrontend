@@ -1,0 +1,13 @@
+.section-product-list,
+.section-payments {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    width: 100%;            /* Permite que la sección ocupe todo el ancho del contenedor */
+    max-width: 800px;       /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: 0 auto;         /* Centra la sección horizontalmente */
+    padding: 20px;          /* Añade un poco de espacio interno */
+    border: 1px solid #0000005d; /* Opcional: añade un borde para visualizar mejor */
+    border-radius: 8px;     /* Opcional: bordes redondeados */
+    background-color: hsla(157, 88%, 74%, 0.432); /* Opcional: fondo para distinguir la sección */
+}

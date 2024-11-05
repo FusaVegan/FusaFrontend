@@ -1,0 +1,8 @@
+.list-users {
+    display: grid; /* Usar grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos del grid */
+    padding: 20px; /* Espacio interno del contenedor */
+    list-style-type: none; /* Eliminar los estilos de lista por defecto */
+    margin: 0; /* Eliminar margen por defecto */
+}

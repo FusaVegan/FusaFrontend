@@ -1,0 +1,19 @@
+.section-stadistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    background: url('https://res.cloudinary.com/tundra/image/upload/v1705500647/Utils/Acelga.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.numbers {
+    font-size: 30px; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Establece el peso de la fuente */
+    color: rgb(0, 0, 0); /* Cambia el color del texto si es necesario */
+}
+
