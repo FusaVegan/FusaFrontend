@@ -1,7 +1,6 @@
 .li-pagination-container {
     list-style: none;
 }
-
 .button-pagination {
     border: #6C7231 solid 2px;
     border-radius: 15px;
@@ -11,7 +10,9 @@
     color: #fafafa;
     transition: 0.7s;
 }
-
+.active{
+    background-color: #C9451E;   
+}
 .button-pagination:hover {
     background-color: #C9451E;
 }

@@ -5,7 +5,13 @@ const NavBarAdmin = () => {
   return (
     <>
       <li>
+        <Link to={'/Analisis'} className='linkNav'>Analisis</Link>
+      </li>
+      <li>
         <Link to={'/Administrar-usuarios'} className='linkNav'>Administrar usuarios</Link>
+      </li>
+      <li>
+        <Link to={'/Administrar-clientes'} className='linkNav'>Administrar locales</Link>
       </li>
       <li>
         <Link to={'/Ordenes-admin'} className='linkNav'>Ordenes</Link>
