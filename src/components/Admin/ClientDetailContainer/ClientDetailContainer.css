@@ -1,0 +1,18 @@
+.section-client-detail-admin {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente (si el contenedor tiene altura definida) */
+    height: 100vh; /* O una altura específica si prefieres */
+    text-align: center; /* Centrar el texto dentro de los elementos */
+    padding: 20px; /* Agregar espacio interno */
+    background-color: #f9f9f9; /* Fondo opcional para mejor visibilidad */
+}
+
+.button-form {
+    margin-bottom: 20px; /* Espacio entre el botón y el texto */
+}
+
+h3, h4 {
+    margin: 10px 0; /* Espacio entre los encabezados */
+}
